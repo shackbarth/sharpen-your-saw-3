@@ -1,10 +1,12 @@
 {
   "name": "sharpen-your-saw-3",
+  "repository": "https://github.com/shackbarth/sharpen-your-saw-3",
   "version": "1.0.0",
-  "description": "",
+  "description": "NorfolkJS February 2016",
   "main": "index.js",
   "scripts": {
-    "test": "mocha test"
+    "postinstall": "./node_modules/webpack/bin/webpack.js",
+    "test": "./node_modules/mocha/bin/mocha test"
   },
   "author": "",
   "license": "MIT",
@@ -12,6 +14,10 @@
     "lodash": "4.3.0"
   },
   "devDependencies": {
+    "babel-core": "6.5.2",
+    "babel-loader": "6.2.2",
+    "babel-preset-es2015": "6.5.0",
+    "babel-preset-react": "6.5.0",
     "chai": "3.5.0",
     "mocha": "2.4.5",
     "proxyquire": "1.7.4"
