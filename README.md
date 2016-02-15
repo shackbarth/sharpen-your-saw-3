@@ -33,6 +33,17 @@ describe("The reverseAndFoo function", function () {
 });
 ```
 
+The result: 
+```
+$ npm test
+
+  The reverseAndFoo function
+    ✓ can reverse a string and add foo
+    ✓ can reverse the empty string and add foo
+    ✓ errors out when passed null
+
+```
+
 #### Testing async code is easy, too
 
 The code:
